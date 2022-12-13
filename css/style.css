@@ -32,7 +32,6 @@ a {
 .container {
   margin: auto;
   max-width: 1300px;
-  overflow: auto;
   padding: 0 20px;
 }
 
@@ -45,6 +44,18 @@ a {
   font-size: 4.5rem;
 }
 
+.bk-primary {
+  background: #ea6e00;
+}
+
+.bk-dark {
+  background: #000;
+}
+
+.current {
+  text-decoration: underline;
+}
+
 .btn {
   display: inline-block;
   text-align: center;
@@ -55,7 +66,7 @@ a {
   border: none;
 }
 .btn-light {
-  background: #fff;
+  background-color: #fff;
   color: #000;
 }
 .btn-dark {
@@ -74,24 +85,9 @@ form .form-control {
   display: block;
   width: 100%;
   padding: 7px 12px;
-  font-size: 1rem;
   line-height: 1.5;
-  color: #495057;
-  background-color: #fff;
   border: 1px solid #ced4da;
   border-radius: 4px;
-}
-
-.bk-primary {
-  background: #ea6e00;
-}
-
-.bk-dark {
-  background: #000;
-}
-
-.current {
-  text-decoration: underline;
 }
 
 #navbar {
@@ -130,6 +126,10 @@ form .form-control {
   padding: 10px 0;
 }
 
+#title .container {
+  padding-top: 80px;
+}
+
 #features .container {
   display: grid;
   padding: 20px 0;
@@ -137,10 +137,6 @@ form .form-control {
 }
 #features .container img {
   width: 100%;
-}
-
-#title .container {
-  padding-top: 80px;
 }
 
 #portfolio .container {
@@ -189,7 +185,7 @@ form .form-control {
   width: 100%;
 }
 
-#home-footer .container {
+#mainfooter .container {
   text-align: center;
   padding: 30px;
 }

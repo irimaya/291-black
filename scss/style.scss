@@ -39,7 +39,6 @@ a {
 .container {
 	margin: auto;
 	max-width: 1300px;
-	overflow: auto;
 	padding: 0 20px;
 }
 
@@ -52,6 +51,18 @@ a {
 	font-size: 4.5rem;
 }
 
+.bk-primary {
+	background: $primary-color;
+}
+
+.bk-dark {
+	background: #000;
+}
+
+.current {
+	text-decoration: underline;
+}
+
 .btn {
 	display: inline-block;
 	text-align: center;
@@ -61,7 +72,7 @@ a {
 	letter-spacing: 1px;
 	border: none;
 	&-light {
-		background: #fff;
+		background-color: #fff;
 		color: #000;
 	}
 	&-dark {
@@ -82,26 +93,11 @@ form {
 		display: block;
 		width: 100%;
 		padding: 7px 12px;
-		font-size: 1rem;
 		line-height: 1.5;
-		color: #495057;
-		background-color: #fff;
 		border: 1px solid #ced4da;
 		border-radius: 4px;
 	}
-} //End form
-
-.bk-primary {
-	background: $primary-color;
-}
-
-.bk-dark {
-	background: #000;
-}
-
-.current {
-	text-decoration: underline;
-}
+} // End form
 
 // Nav
 #navbar {
@@ -141,6 +137,13 @@ form {
 	}
 } //End #showcase
 
+// Title
+#title {
+	.container {
+		padding-top: 80px;
+	}
+}
+
 // Features
 #features {
 	.container {
@@ -151,14 +154,7 @@ form {
 			width: 100%;
 		}
 	}
-}
-
-// Title
-#title {
-	.container {
-		padding-top: 80px;
-	}
-}
+} //End #features
 
 // Portfolio
 #portfolio {
@@ -190,7 +186,7 @@ form {
 	p {
 		padding-bottom: 20px;
 	}
-}
+} //End #portoflio-item
 
 // About
 #about {
@@ -210,10 +206,10 @@ form {
 			width: 100%;
 		}
 	}
-}
+} //End #contact
 
 // Footer
-#home-footer {
+#mainfooter {
 	.container {
 		text-align: center;
 		padding: 30px;
